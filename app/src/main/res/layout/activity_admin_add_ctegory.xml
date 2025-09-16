@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddCtegory"
+    android:padding="10sp"
+    android:orientation="vertical"
+    android:background="@color/cream"
+    >
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_goback"
+        android:padding="15sp"
+        android:background="@color/brown"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/outline_arrow_back_ios_24"
+        >
+    </ImageButton>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Category"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/beige1"
+            android:textStyle="bold">
+        </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:hint="          Enter Category Name"
+                android:gravity="center_vertical"
+                app:hintTextColor="@color/brown"
+                app:startIconDrawable="@drawable/lock"
+                app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/edt_catname"
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25sp">
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/photo">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose a Picture"
+                    android:layout_marginLeft="10sp"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/brown">
+
+                </TextView>
+
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:text="Add Category"
+                android:textStyle="bold"
+                >
+
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

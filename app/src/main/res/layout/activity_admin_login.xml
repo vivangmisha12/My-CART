@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin"
+    android:orientation="vertical"
+    android:padding="30sp"
+    android:background="@color/cream">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="5sp"
+            android:elevation="10sp"
+            android:padding="20sp"
+
+            app:cardCornerRadius="10sp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20sp"
+                android:background="@color/cream">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome Admin"
+                    android:lineHeight="60sp"
+                    android:gravity="center"
+                    android:textSize="37sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/beige1">
+                </TextView>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="right"
+                    android:hint="User Id"
+                    app:startIconDrawable="@drawable/user"
+                    app:endIconMode="clear_text"
+                    app:startIconTint="#BDBDBD">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:id="@+id/edt_userid"
+                        android:textColorHint="@color/brown"
+                        android:background="#FFFFFF">
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:layout_marginTop="15dp"
+                    app:startIconDrawable="@drawable/lock"
+                    app:endIconMode="password_toggle"
+                    counterEnabled="true"
+                    app:startIconTint="#BDBDBD"
+                    android:elevation="4sp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/edt_password"
+                        android:inputType="numberPassword"
+                        android:textColorHint="@color/brown"
+                        android:background="#FFFFFF">
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Already Registered?Login Now"
+                    android:layout_marginTop="10sp"
+                    android:textColor="@color/red"
+                    android:id="@+id/txt_gotologin">
+                </TextView>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginHorizontal="30dp"
+                    android:text="Login Now"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:textAllCaps="true"
+                    android:id="@+id/btn_adminlogin"
+                    android:backgroundTint="@color/brown"
+                    android:textStyle="bold"
+                    app:cornerRadius="20dp"
+                    >
+                </com.google.android.material.button.MaterialButton>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </ScrollView>
+</LinearLayout>

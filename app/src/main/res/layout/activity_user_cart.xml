@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".UserCart"
+    android:fitsSystemWindows="true"
+    android:layout_marginTop="20sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Vivang Mishra"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/cart_username"
+        >
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/cart_username"
+        android:text="Deliver Addresh : House No : 43, Landmark : Carrer Convent, Pincode : 226022"
+        android:id="@+id/cart_user_address">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_user_address"
+        android:layout_marginTop="5sp"
+        android:text="Contact No: 8468016194"
+        android:id="@+id/cart_user_mobileno">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_below="@+id/cart_user_mobileno"
+        android:layout_marginTop="15sp"
+        android:id="@+id/cart_product_recycler">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_price_card"
+        android:layout_below="@id/cart_product_recycler"
+        android:layout_above="@id/linear_order"
+        android:layout_margin="30sp"
+        android:padding="10sp"
+        app:cardCornerRadius="15sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10sp"
+            android:id="@+id/linearlayout">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price Detail"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10sp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shopping Price : "
+                    android:layout_weight="1">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹0 : "
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:id="@+id/cart_shopping_amount">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10sp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount : "
+                    android:layout_weight="1">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹0 : "
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:id="@+id/cart_discount">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10sp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deliver fee : "
+                    android:layout_weight="1">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹0 : "
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:id="@+id/cart_dilveryfee">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10sp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Platform Fee : "
+                    android:layout_weight="1">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹0 "
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:id="@+id/cart_platformfee">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10sp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Bill Amount:"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹0 "
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:id="@+id/cart_total_amount">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0sp"
+        android:padding="15sp"
+        android:background="@color/green"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/linear_order"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount : ₹300"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:id="@+id/cart_total_amount_botton"
+            >
+
+        </TextView>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:id="@+id/cart_place_order">
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

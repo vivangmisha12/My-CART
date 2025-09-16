@@ -1,0 +1,115 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".user_product_details">
+
+    <ImageView
+        android:id="@+id/details_productimg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/chips" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/details_productimg"
+        android:fitsSystemWindows="true">
+
+        <!-- 🧠 IMPORTANT: ScrollView must have ONE direct child -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lay's Onion Chips"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:id="@+id/details_productname"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="₹20"
+                    android:id="@+id/details_productselerate"
+                    android:textSize="18sp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="50g"
+                    android:id="@+id/details_productpacksize"
+                    android:textSize="18sp"
+                    android:gravity="end" />
+            </LinearLayout>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/details_productmrp"
+                 android:text="MRP :₹30"
+                 android:layout_marginBottom="10sp">
+
+             </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lay's American Style Cream and Onion Potato Chips are a popular snack..."
+                android:textSize="22sp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/details_productdetail"/>
+        </LinearLayout>
+    </ScrollView>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:weightSum="2"
+           android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:weightSum="2"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="ADD TO CART"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/brown1"
+                    android:layout_marginEnd="5dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text="Buy Now"
+                    android:textSize="20dp"
+                    android:backgroundTint="@color/brown1"
+                    android:layout_marginStart="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Dashboard"
+    android:icon="@drawable/user"
+    android:id="@+id/menu_adashboard">
+
+</item>
+    <item android:title="Add Category"
+        android:icon="@drawable/addcategory"
+        android:id="@+id/menu_acategory">
+
+    </item>
+    <item android:title="Add Product"
+        android:icon="@drawable/allproducts"
+        android:id="@+id/menu_aproduct">
+
+    </item>
+    <item android:title="Product Details"
+        android:icon="@drawable/productdetail"
+        android:id="@+id/menu_aproductdetails">
+
+    </item>
+    <item android:title="User List"
+        android:icon="@drawable/userlist"
+        android:id="@+id/menu_auserlist">
+
+    </item>
+    <item android:title="All Orders"
+        android:icon="@drawable/allorders"
+        android:id="@+id/menu_aallorders">
+
+    </item>
+    <item android:title="Log Out"
+        android:icon="@drawable/logout"
+        android:id="@+id/menu_alogout">
+
+    </item>
+
+</menu>

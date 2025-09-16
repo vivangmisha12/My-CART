@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5sp"
+    android:layout_marginBottom="5sp"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginLeft="20sp"
+        android:id="@+id/samplecart_productimage"
+        android:src="@drawable/chips"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uncle Chips"
+        android:id="@+id/samplecart_productname"
+        android:layout_marginLeft="15sp"
+        android:layout_toEndOf="@id/samplecart_productimage"
+        android:textSize="15sp"
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.20"
+        android:id="@+id/samplecart_productselrate"
+        android:layout_toEndOf="@id/samplecart_productimage"
+        android:layout_below="@id/samplecart_productname"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="5sp">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity : 2"
+        android:layout_toEndOf="@id/samplecart_productimage"
+        android:layout_below="@id/samplecart_productselrate"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="5sp"
+        android:id="@+id/samplecart_productquantity">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/samplecart_deleteproduct"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/samplecart_productquantity"
+        android:src="@drawable/outline_auto_delete_24">
+
+    </ImageView>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:title="Home"  android:icon="@drawable/home" android:id="@+id/menu_uhome">
+    </item>
+    <item android:title="Profile"  android:icon="@drawable/profile" android:id="@+id/menu_uperson">
+
+    </item>
+    <item android:title="Setting" android:icon="@drawable/settings" android:id="@+id/menu_usetting">
+
+    </item>
+    <item android:title="Notification" android:icon="@drawable/notification" android:id="@+id/menu_unotification">
+
+    </item>
+    <item android:title="Order" android:icon="@drawable/order" android:id="@+id/menu_uorders">
+
+    </item>
+    <item android:title="user_cart" android:icon="@drawable/order" android:id="@+id/menu_user_cart">
+
+    </item>
+    <item android:title="Help and Support" android:icon="@drawable/help" android:id="@+id/menu_uhelp">
+
+    </item>
+    <item android:title="Logout"  android:icon="@drawable/logout" android:id="@+id/menu_ulogout">
+
+    </item>
+
+</menu>
